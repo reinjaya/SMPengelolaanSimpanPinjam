@@ -7,11 +7,11 @@ namespace WebAPI.Models
     public class Penarikan
     {
         [Key]
-        public int KodePenarikan { get; set; }
+        public int IdPenarikan { get; set; }
         //[ForeignKey("Anggota")]
         //public string KodeAnggota { get; set; }
         [ForeignKey("Tabungan")]
-        public int KodeTabungan { get; set; }
+        public int IdTabungan { get; set; }
         public int BesarPenarikan { get; set; }
         public DateTime TglPenarikan { get; set; }
 

@@ -5,7 +5,7 @@ namespace WebAPI.Models
     public class JenisSimpanan
     {
         [Key]
-        public string KodeJenisSimpanan { get; set; }
+        public int IdJenisSimpanan { get; set; }
         public string NamaSimpanan { get; set; }
         public double BesarSimpanan { get; set; }
         public string UserEntry { get; set; }

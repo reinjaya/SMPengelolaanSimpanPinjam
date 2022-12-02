@@ -8,12 +8,12 @@ namespace WebAPI.Models
     public class Tabungan
     {
         [Key]
-        public int KodeTabungan { get; set; }
-        [ForeignKey("Anggota")]
-        public string KodeAnggota { get; set; }
+        public int IdTabungan { get; set; }
+        [ForeignKey("User")]
+        public int IdUser { get; set; }
         public DateTime TglMulai { get; set; }
         public double BesarTabungan { get; set; }
         [JsonIgnore]
-        public Anggota? Anggota { get; set; }
+        public User? User { get; set; }
     }
 }

@@ -7,11 +7,11 @@ namespace WebAPI.Models
     public class Pinjaman
     {
         [Key]
-        public int KodePinjaman { get; set; }
-        //[ForeignKey("Anggota")]
-        //public string KodeAnggota { get; set; }
+        public int IdPinjaman { get; set; }
+        [ForeignKey("User")]
+        public int IdUser { get; set; }
         [ForeignKey("JenisPinjaman")]
-        public string KodeJenisPinjaman { get; set; }
+        public int IdJenisPinjaman { get; set; }
         public double BesarPinjaman { get; set; }
         public double BesarAngsuran { get; set; }
         public int LamaAngsuran { get; set; }
@@ -21,8 +21,8 @@ namespace WebAPI.Models
         public DateTime TglEntry { get; set; }
         public DateTime TglTempo { get; set; }
         public string status { get; set; }
-        //[JsonIgnore]
-        //public Anggota? Anggota { get; set; }
+        [JsonIgnore]
+        public User? User { get; set; }
         [JsonIgnore]
         public JenisPinjaman? JenisPinjaman { get; set; }
     }

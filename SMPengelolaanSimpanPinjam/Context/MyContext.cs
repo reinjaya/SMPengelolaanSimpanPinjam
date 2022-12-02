@@ -11,8 +11,8 @@ namespace WebAPI.Context
 
         }
 
-        public DbSet<Anggota> Anggota { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
         public DbSet<JenisPinjaman> JenisPinjaman { get; set; }
         public DbSet<JenisSimpanan> JenisSimpanan { get; set; }
         public DbSet<Tabungan> Tabungan { get; set; }

@@ -5,7 +5,7 @@ namespace WebAPI.Models
     public class JenisPinjaman
     {
         [Key]
-        public string KodeJenisPinjaman { get; set; }
+        public int IdJenisPinjaman { get; set; }
         public string NamaPinjaman { get; set; }
         public int LamaAngsuran { get; set; }
         public double MaksPinjaman { get; set; }
