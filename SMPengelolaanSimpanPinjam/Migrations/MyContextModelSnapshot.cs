@@ -448,7 +448,7 @@ namespace WebAPI.Migrations
 
             modelBuilder.Entity("WebAPI.Models.Simpanan", b =>
                 {
-                    b.HasOne("WebAPI.Models.JenisPinjaman", "JenisSimpanan")
+                    b.HasOne("WebAPI.Models.JenisSimpanan", "JenisSimpanan")
                         .WithMany()
                         .HasForeignKey("IdJenisSimpanan")
                         .OnDelete(DeleteBehavior.Cascade)

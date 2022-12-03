@@ -17,7 +17,7 @@ namespace WebAPI.Models
         public DateTime TglMulai { get; set; }
         public DateTime TglEntry { get; set; }
         [JsonIgnore]
-        public JenisPinjaman? JenisSimpanan { get; set; }
+        public JenisSimpanan? JenisSimpanan { get; set; }
         [JsonIgnore]
         public User? User { get; set; }
     }

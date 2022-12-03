@@ -33,7 +33,7 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Gagal login, password atau username tidak valid"
+                        Message = "Password atau username tidak valid"
                     });
                 }
                 else

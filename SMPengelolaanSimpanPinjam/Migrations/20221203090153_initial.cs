@@ -173,10 +173,10 @@ namespace WebAPI.Migrations
                 {
                     table.PrimaryKey("PK_Simpanan", x => x.IdSimpanan);
                     table.ForeignKey(
-                        name: "FK_Simpanan_JenisPinjaman_IdJenisSimpanan",
+                        name: "FK_Simpanan_JenisSimpanan_IdJenisSimpanan",
                         column: x => x.IdJenisSimpanan,
-                        principalTable: "JenisPinjaman",
-                        principalColumn: "IdJenisPinjaman",
+                        principalTable: "JenisSimpanan",
+                        principalColumn: "IdJenisSimpanan",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Simpanan_Users_IdUser",
@@ -310,9 +310,6 @@ namespace WebAPI.Migrations
                 name: "Angsuran");
 
             migrationBuilder.DropTable(
-                name: "JenisSimpanan");
-
-            migrationBuilder.DropTable(
                 name: "Penarikan");
 
             migrationBuilder.DropTable(
@@ -326,6 +323,9 @@ namespace WebAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "Tabungan");
+
+            migrationBuilder.DropTable(
+                name: "JenisSimpanan");
 
             migrationBuilder.DropTable(
                 name: "JenisPinjaman");

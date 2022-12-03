@@ -11,6 +11,11 @@ namespace WebAPI.Repositories
             this._context = myContext;
         }
 
+        public IEnumerable<Entity> GetAll()
+        {
+            return _context.Set<Entity>().ToList();
+        }
+
         public int Create(Entity entity)
         {
             _context.Set<Entity>().Add(entity);
@@ -40,11 +45,6 @@ namespace WebAPI.Repositories
             _context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             var result = _context.SaveChanges();
             return result;
-        }
-
-        IEnumerable<Entity> IRepository<Entity>.GetAll()
-        {
-            return _context.Set<Entity>().ToList();
         }
     }
 }

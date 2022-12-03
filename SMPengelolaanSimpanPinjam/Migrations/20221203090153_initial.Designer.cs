@@ -12,7 +12,7 @@ using WebAPI.Context;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20221202205319_initial")]
+    [Migration("20221203090153_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -450,7 +450,7 @@ namespace WebAPI.Migrations
 
             modelBuilder.Entity("WebAPI.Models.Simpanan", b =>
                 {
-                    b.HasOne("WebAPI.Models.JenisPinjaman", "JenisSimpanan")
+                    b.HasOne("WebAPI.Models.JenisSimpanan", "JenisSimpanan")
                         .WithMany()
                         .HasForeignKey("IdJenisSimpanan")
                         .OnDelete(DeleteBehavior.Cascade)
