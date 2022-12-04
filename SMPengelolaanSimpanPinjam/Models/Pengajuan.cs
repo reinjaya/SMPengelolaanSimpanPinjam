@@ -14,6 +14,7 @@ namespace WebAPI.Models
         [ForeignKey("JenisPinjaman")]
         public int IdJenisPinjaman { get; set; }
         public int BesarPinjaman { get; set; }
+        public double BesarAngsuran { get; set; }
         public DateTime TglAcc { get; set; }
         public string Status { get; set; }
         [JsonIgnore]

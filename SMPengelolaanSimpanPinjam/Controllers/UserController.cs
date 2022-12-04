@@ -35,7 +35,7 @@ namespace WebAPI.Controllers
                 }
                 else
                 {
-                    var result = _repository.AddSimpanan(user.IdUser, user.UserEntry, user.TglEntry, user.TglEntry);
+                    var result = _repository.AddSaldo(user.IdUser, user.UserEntry, user.TglEntry, user.TglEntry);
                     if (result == 0)
                     {
                         return Ok(new
@@ -99,6 +99,74 @@ namespace WebAPI.Controllers
             }
         }
 
+        [HttpGet("GetAnggota")]
+        public ActionResult GetAnggota()
+        {
+            try
+            {
+                var data = _repository.GetAnggota();
+                if (data == null)
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data not found"
+                    }); ;
+                }
+                else
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data has been retrieved",
+                        Data = data
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = 400,
+                    Message = ex.Message
+                });
+            }
+        }
+
+        [HttpGet("GetAnggotaAktif")]
+        public ActionResult GetAnggotaAktif()
+        {
+            try
+            {
+                var data = _repository.GetAnggotaAktif();
+                if (data == null)
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data not found"
+                    }); ;
+                }
+                else
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data has been retrieved",
+                        Data = data
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = 400,
+                    Message = ex.Message
+                });
+            }
+        }
+
         [HttpGet("{id}")]
         public ActionResult GetById(int id)
         {
@@ -120,6 +188,39 @@ namespace WebAPI.Controllers
                         StatusCode = 200,
                         Message = "Data has been retrieved",
                         Data = data
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = 400,
+                    Message = ex.Message
+                });
+            }
+        }
+
+        [HttpPut("Keluarkan")]
+        public ActionResult GantiStatus(int id, bool keluarkan)
+        {
+            try
+            {
+                var data = _repository.GantiStatusAnggota(id, keluarkan);
+                if (data == 0)
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data failed to update"
+                    }); ;
+                }
+                else
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data updated successfully"
                     });
                 }
             }

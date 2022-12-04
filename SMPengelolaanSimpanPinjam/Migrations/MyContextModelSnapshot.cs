@@ -151,6 +151,9 @@ namespace WebAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPengajuan"), 1L, 1);
 
+                    b.Property<double>("BesarAngsuran")
+                        .HasColumnType("float");
+
                     b.Property<int>("BesarPinjaman")
                         .HasColumnType("int");
 

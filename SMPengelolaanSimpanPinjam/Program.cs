@@ -8,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<AccountRepository>();
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<TabunganRepository>();
+builder.Services.AddScoped<PengajuanRepository>();
+builder.Services.AddScoped<SimpananRepository>();
+builder.Services.AddScoped<PinjamanRepository>();
+builder.Services.AddScoped<AngsuranRepository>();
 builder.Services.AddDbContext<MyContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection"));
