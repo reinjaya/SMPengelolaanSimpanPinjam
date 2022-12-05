@@ -85,40 +85,6 @@ namespace WebAPI.Controllers
             }
         }
 
-        [HttpGet("JenisPinjaman")]
-        public ActionResult GetJenisPinjaman(int idJenisPinjaman)
-        {
-            try
-            {
-                var data = _repository.GetJenisPinjaman(idJenisPinjaman);
-                if (data == null)
-                {
-                    return Ok(new
-                    {
-                        StatusCode = 200,
-                        Message = "Data not found"
-                    }); ;
-                }
-                else
-                {
-                    return Ok(new
-                    {
-                        StatusCode = 200,
-                        Message = "Data has been retrieved",
-                        Data = data
-                    });
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new
-                {
-                    StatusCode = 400,
-                    Message = ex.Message
-                });
-            }
-        }
-
         [HttpPost("TambahPengajuan")]
         public ActionResult TambahPengajuanBaru(Pengajuan pengajuan)
         {
@@ -193,7 +159,6 @@ namespace WebAPI.Controllers
                 });
             }
         }
-
 
     }
 }

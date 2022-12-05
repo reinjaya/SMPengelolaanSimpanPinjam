@@ -35,11 +35,6 @@ namespace WebAPI.Repositories.Data
             }
         }
 
-        public JenisPinjaman GetJenisPinjaman(int id)
-        {
-            return _context.JenisPinjaman.Find(id);
-        }
-
         public IEnumerable<Pengajuan> GetDaftarPengajuanAnggota(int id)
         {
            return _context.Pengajuan.Where(x => x.IdUser == id).ToList();
