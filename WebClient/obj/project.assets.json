@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\WebApp.csproj",
+      "projectUniqueName": "E:\\Reinhard\\Downloads\\SMPengelolaanSimpanPinjam\\WebClient\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\WebApp.csproj",
+      "projectPath": "E:\\Reinhard\\Downloads\\SMPengelolaanSimpanPinjam\\WebClient\\WebApp.csproj",
       "packagesPath": "C:\\Users\\Reinhard\\.nuget\\packages\\",
-      "outputPath": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\obj\\",
+      "outputPath": "E:\\Reinhard\\Downloads\\SMPengelolaanSimpanPinjam\\WebClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

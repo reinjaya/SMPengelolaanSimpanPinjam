@@ -1,0 +1,95 @@
+﻿@{
+	Layout = "_AdminLayout";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-money-bill-wave"></i> Data Tabungan</h1>
+
+	<a asp-controller="Tabungan" asp-action="Index" class="btn btn-secondary btn-icon-split">
+		<span class="icon text-white-50"><i class="fas fa-arrow-left"></i></span>
+		<span class="text">Kembali</span>
+	</a>
+	@*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal"> <i class="fa fa-plus"></i> Tambah Data </button>*@
+</div>
+
+<div class="card shadow mb-4">
+	<!-- /.card-header -->
+	<div class="card-header py-3">
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Data Penarikan Uang<span id="#"> (nama anggota)</span></h6>
+	</div>
+
+	<div class="card-body">
+			<div class="row">
+@*				<input type="hidden" value="<?php echo $lo; ?>" name="kode_tabungan">
+				<input type="hidden" value="<?php echo $luy; ?>" name="kode_anggota"> 
+				<?php $rtyu=mysql_fetch_array(mysql_query("SELECT *FROM t_tabungan where kode_tabungan='$lo' and kode_anggota='$luy'")); ?>*@
+				<div class="form-group col-md-4">
+					<label class="font-weight-bold">Total Saldo</label>
+					<input autocomplete="off" type="text" id="txt1" onkeyup="sum();" name="saldo" value="100000" required class="form-control" readonly="readonly"/>
+				</div>
+
+				<script>
+					function sum() {
+					var txtFirstNumberValue = document.getElementById('txt1').value;
+					var txtSecondNumberValue = document.getElementById('txt2').value;
+					var result = parseInt(txtFirstNumberValue) - parseInt(txtSecondNumberValue);
+					if (!isNaN(result)) {
+					document.getElementById('txt3').value = result;
+					}
+					else{
+					document.getElementById('txt3').value = txtFirstNumberValue;
+					}
+					}
+					function isNumberKey(evt)
+					{
+					var charCode = (evt.which) ? evt.which : event.keyCode
+					if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+					return false;
+					return true;
+					}
+				</script>
+  
+				<div class="form-group col-md-4">
+					<label class="font-weight-bold">Besar Ambil Uang</label>
+					<input autocomplete="off" type="text" id="txt2" onkeyup="sum();" onkeypress="return isNumberKey(event)" name="besar_ambil" required class="form-control" />
+				</div>
+				
+				<div class="form-group col-md-4">
+					<label class="font-weight-bold">Sisa Uang</label>
+					<input autocomplete="off" type="text" id="txt3" onkeyup="sum();" onkeypress="return isNumberKey(event)" required class="form-control" readonly="readonly"/>
+				</div>
+			</div>
+		<div class="card-footer text-right">
+            <button class="btn btn-primary"><i class="fa fa-check"></i> Ambil Uang</button>
+            <button type="reset" class="btn btn-info"><i class="fa fa-sync-alt"></i> Reset</button>
+        </div>
+	</div>
+</div>
+
+<div class="card shadow mb-4">
+	<!-- /.card-header -->
+	<div class="card-header py-3">
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Data Riwayat Penarikan Uang <span id="#"> (nama anggota)</span></h6>
+	</div>
+
+	<div class="card-body">
+		<div class="table-responsive">
+			<table class="table table-bordered" id="TablePenarikan" width="100%" cellspacing="0">
+				<thead class="bg-primary text-white">
+					<tr align="center">
+						<th width="5%">No</th>
+						<th>Kode Ambil</th>
+						<th>Kode Anggota</th>
+						<th>Nama Anggota</th>
+						<th>Kode Tabungan</th>
+						<th>Besar Ambil</th>
+						<th>Tanggal Ambil</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

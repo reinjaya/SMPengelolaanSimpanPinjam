@@ -24,29 +24,86 @@ E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebApp\ob
 E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebApp\obj\Debug\net6.0\WebApp.pdb
 E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
 E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebApp\obj\Debug\net6.0\ref\WebApp.dll
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\appsettings.Development.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\appsettings.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.staticwebassets.runtime.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.exe
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.deps.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.runtimeconfig.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.dll
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.pdb
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.csproj.AssemblyReference.cache
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.AssemblyInfoInputs.cache
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.AssemblyInfo.cs
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.csproj.CoreCompileInputs.cache
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cache
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cs
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\staticwebassets.build.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\staticwebassets.development.json
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\scopedcss\bundle\WebApp.styles.css
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\scopedcss\projectbundle\WebApp.bundle.scp.css
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.dll
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\refint\WebApp.dll
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.pdb
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
-E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\ref\WebApp.dll
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\appsettings.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\WebApp.staticwebassets.runtime.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\WebApp.exe
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\WebApp.deps.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\WebApp.runtimeconfig.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\WebApp.dll
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\bin\Debug\net6.0\WebApp.pdb
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.csproj.AssemblyReference.cache
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.AssemblyInfoInputs.cache
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.AssemblyInfo.cs
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cache
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cs
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApp.props
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApp.props
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebApp.props
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\scopedcss\bundle\WebApp.styles.css
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\scopedcss\projectbundle\WebApp.bundle.scp.css
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.dll
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\refint\WebApp.dll
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.pdb
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
+C:\Users\Faris\source\repos\SMPengelolaanSimpanPinjam-main\WebApp\obj\Debug\net6.0\ref\WebApp.dll
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\appsettings.Development.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\appsettings.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\WebApp.staticwebassets.runtime.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\WebApp.exe
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\WebApp.deps.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\WebApp.runtimeconfig.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\WebApp.dll
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\bin\Debug\net6.0\WebApp.pdb
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.csproj.AssemblyReference.cache
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.AssemblyInfoInputs.cache
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.AssemblyInfo.cs
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.csproj.CoreCompileInputs.cache
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cache
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cs
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\staticwebassets.build.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\staticwebassets.development.json
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\scopedcss\bundle\WebApp.styles.css
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\scopedcss\projectbundle\WebApp.bundle.scp.css
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.dll
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\refint\WebApp.dll
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.pdb
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
+E:\Reinhard\Downloads\ProjectMCC-main\ProjectMCC-main\WebApp\obj\Debug\net6.0\ref\WebApp.dll
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\appsettings.Development.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\appsettings.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.staticwebassets.runtime.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.exe
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.deps.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.runtimeconfig.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.dll
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\bin\Debug\net6.0\WebApp.pdb
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.csproj.AssemblyReference.cache
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.AssemblyInfoInputs.cache
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.AssemblyInfo.cs
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.csproj.CoreCompileInputs.cache
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cache
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cs
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\staticwebassets.build.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\staticwebassets.development.json
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\scopedcss\bundle\WebApp.styles.css
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\scopedcss\projectbundle\WebApp.bundle.scp.css
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.dll
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\refint\WebApp.dll
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.pdb
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
+E:\Reinhard\Downloads\SMPengelolaanSimpanPinjam\WebClient\obj\Debug\net6.0\ref\WebApp.dll
