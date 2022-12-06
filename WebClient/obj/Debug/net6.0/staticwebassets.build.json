@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Al7M2xeTJ4capoKCaHHzIhH2gwXHJxx8KyLpyzg7YMM=",
+  "Hash": "f0UNkedPlQdda0pyPBe5W3UGaIpjvkqwLn1TkuRnok4=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\js\\Anggota.js"
     },
     {
+      "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\DataPenarikan.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/DataPenarikan.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\DataPenarikan.js"
+    },
+    {
       "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\DataPengaturan.js",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\DataPengaturan.js"
+    },
+    {
+      "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Pengguna.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/Pengguna.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Pengguna.js"
     },
     {
       "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\site.js",

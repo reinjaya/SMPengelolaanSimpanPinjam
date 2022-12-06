@@ -2,7 +2,8 @@
 {
     public class TabunganAnggota
     {
-        public int Id { get; set; }
+        public int IdUser { get; set; }
+        public int IdTabungan { get; set; }
         public string NomorAnggota { get; set; }
         public string NamaAnggota { get; set; }
         public DateTime TglMulai { get; set; }
