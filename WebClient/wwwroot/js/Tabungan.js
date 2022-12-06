@@ -9,18 +9,49 @@
 $(document).ready(function () {
 
     $('#TableTabungan').DataTable({
-        data: dataSetTabungan,
+        ajax: {
+            url: 'https://localhost:7189/api/Tabungan/DaftarTabungan',
+            dataSrc: 'data',
+            //headers: {
+            //    'Authorization': "Bearer " + sessionStorage.getItem("token")
+            //},
+        }, 
         columns: [
-            { dataSetTabungan: null, },
-            { dataSetTabungan: null, },
-            { dataSetTabungan: null, },
-            { dataSetTabungan: null, },
-            { dataSetTabungan: null, },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.id;
+                }
+            },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.nomorAnggota;
+                }
+            },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.namaAnggota;
+                }
+            },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.jumlahSaldo;
+                }
+            },
             {
                 dataSetTabungan: null,
                 "render": function (data, type, row, meta) {
                     return `
-                    <a href="/Tabungan/Penarikan" title="Ambil Uang" class="btn btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i></a>
+                    <a onclick="ambilUang()" href="/Tabungan/Penarikan" title="Ambil Uang" class="btn btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i></a>
                     `;
                 }
             }

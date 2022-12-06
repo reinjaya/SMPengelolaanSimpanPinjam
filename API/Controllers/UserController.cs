@@ -239,7 +239,7 @@ namespace WebAPI.Controllers
         {
             try
             {
-                var data = _repository.GantiStatusAnggota(user);
+                var data = _repository.GantiDataAnggota(user);
                 if (data == 0)
                 {
                     return Ok(new
