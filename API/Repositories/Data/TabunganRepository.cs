@@ -27,7 +27,8 @@ namespace WebAPI.Repositories.Data
                 {
                     result.Add(new TabunganAnggota
                     {
-                        Id = item.IdTabungan,
+                        IdUser = item.IdUser,
+                        IdTabungan = item.IdTabungan,
                         NomorAnggota = item.User.NomorAnggota,
                         NamaAnggota = item.User.Nama,
                         TglMulai = item.TglMulai,
@@ -68,9 +69,9 @@ namespace WebAPI.Repositories.Data
             }
         }
 
-        public IEnumerable<Penarikan> GetRiwayatPenarikan(int id)
+        public IEnumerable<Penarikan> GetRiwayatPenarikan(int idUser)
         {
-            return _context.Penarikan.Where(x => x.IdTabungan == id).ToList();
+            return _context.Penarikan.Include(x => x.Tabungan).Where(x => x.Tabungan.IdUser == idUser).ToList();
         }
 
         public double TotalTabungan()
