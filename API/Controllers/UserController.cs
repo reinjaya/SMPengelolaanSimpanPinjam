@@ -234,6 +234,39 @@ namespace WebAPI.Controllers
             }
         }
 
+        [HttpPut("GantiDataAnggota")]
+        public ActionResult GantiDataAnggota(User user)
+        {
+            try
+            {
+                var data = _repository.GantiStatusAnggota(user);
+                if (data == 0)
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data failed to update"
+                    }); ;
+                }
+                else
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data updated successfully"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = 400,
+                    Message = ex.Message
+                });
+            }
+        }
+
         [HttpPut]
         public ActionResult Update(User user)
         {

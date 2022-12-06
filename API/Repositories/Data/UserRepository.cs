@@ -73,6 +73,19 @@ namespace WebAPI.Repositories.Data
             return 0;
         }
 
+        public int GantiDataAnggota(User user)
+        {
+            var data = _context.Users.Find(user.IdUser);
+            user.Password = data.Password;
+            if (data != null)
+            {
+                _context.Entry(user).State = EntityState.Modified;
+                var result = _context.SaveChanges();
+                return result;
+            }
+            return 0;
+        }
+
         public IEnumerable<User> GetAnggota()
         {
             return _context.Users.Where(user => user.IdRole == 3).ToList();
