@@ -300,18 +300,18 @@ namespace WebAPI.Controllers
             }
         }
 
-        [HttpDelete]
-        public ActionResult Delete(int id)
+        [HttpPut("GantiPassword")]
+        public ActionResult GantiPassword(int id, string newPassword)
         {
             try
             {
-                var data = _repository.Delete(id);
+                var data = _repository.GantiPassword(id, newPassword);
                 if (data == 0)
                 {
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to delete"
+                        Message = "Data failed to update"
                     }); ;
                 }
                 else
@@ -319,7 +319,74 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data deleted successfully"
+                        Message = "Data updated successfully"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = 400,
+                    Message = ex.Message
+                });
+            }
+        }
+
+        [HttpGet("GetAdminandPetugas")]
+        public ActionResult GetAdminandPetugas()
+        {
+            try
+            {
+                var data = _repository.GetAdminandPetugas();
+                if (data == null)
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data not found",
+                    }); ;
+                }
+                else
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data has been retrieved",
+                        Data = data
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = 400,
+                    Message = ex.Message
+                });
+            }
+        }
+
+        [HttpPut("GantiRole")]
+        public ActionResult ChangeRole(int userId, int idRole)
+        {
+            try
+            {
+                var data = _repository.ChangeRole(userId, idRole);
+                if (data == 0)
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data failed to update"
+                    }); ;
+                }
+                else
+                {
+                    return Ok(new
+                    {
+                        StatusCode = 200,
+                        Message = "Data updated successfully"
                     });
                 }
             }
