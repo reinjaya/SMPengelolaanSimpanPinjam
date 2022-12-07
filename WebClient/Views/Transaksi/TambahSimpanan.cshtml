@@ -1,0 +1,60 @@
+﻿@{
+	Layout = "_AdminLayout";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-dolly-flatbed"></i> Data Transaksi</h1>
+
+	<a onclick="back()" class="btn btn-secondary btn-icon-split"><span class="icon text-white-50"><i class="fas fa-arrow-left"></i></span>
+		<span class="text">Kembali</span>
+	</a>
+</div>
+
+<div class="card shadow mb-4">
+	<div class="card-header py-3">
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-plus"></i> Tambah Data Simpanan</h6>
+	</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Kode Anggota</label>
+					<input autocomplete="off" type="text" name="kode_anggota" value="" required class="form-control" readonly="readonly"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Nama Anggota</label>
+					<input autocomplete="off" type="text" name="nama_anggota" value="" required class="form-control" readonly="readonly"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Pekerjaan</label>
+					<input autocomplete="off" type="text" name="pekerjaan" value="" required class="form-control" readonly="readonly"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Jenis Simpanan</label>
+					<select name="kode_jenis_simpan" id="id_jenis_simpan" onChange="" class="form-control" required>		  
+					</select>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Besar Simpanan</label>
+					<input autocomplete="off" type="number" name="besar_simpanan" value="" required readonly class="form-control"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">User Entri</label>
+					<input autocomplete="off" type="text" name="user_entri" value="Admin" required class="form-control" readonly="readonly"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Tanggal Entri</label>
+					<input autocomplete="off" type="text" name="tgl_entri" value="@DateTime.Now.ToString("MM/dd/yyyy")" required class="form-control" readonly="readonly"/>
+				</div>
+			</div>
+		</div>
+		<div class="card-footer text-right">
+			<button onclick="tambahSimpananAnggota()" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
+			<button type="reset" class="btn btn-info"><i class="fa fa-sync-alt"></i> Reset</button>
+		</div>
+</div>

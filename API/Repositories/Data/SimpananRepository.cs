@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebAPI.Context;
 using WebAPI.Models;
+using WebAPI.ViewModel;
 
 namespace WebAPI.Repositories.Data
 {
@@ -12,9 +13,23 @@ namespace WebAPI.Repositories.Data
             _context = context;
         }
 
-        public IEnumerable<Simpanan> DaftarSimpananAnggota(int idUser)
+        public IEnumerable<SimpananAnggotaVM> DaftarSimpananAnggota(int idUser)
         {
-            return _context.Simpanan.Where(x => x.IdUser == idUser).ToList();
+            var data = _context.Simpanan.Include(x => x.JenisSimpanan).Where(x => x.IdUser == idUser).ToList();
+
+            List<SimpananAnggotaVM> result = new List<SimpananAnggotaVM>();
+
+            foreach (var item in data)
+            {
+                result.Add(new SimpananAnggotaVM
+                {
+                    TglSimpan = item.TglEntry,
+                    NamaSimpanan = item.JenisSimpanan.NamaSimpanan,
+                    BesarSimpanan = item.BesarSimpanan
+                });
+            }
+
+            return result;
         }
 
         public int TambahSimpananWajib(int idUser, string userEntry)

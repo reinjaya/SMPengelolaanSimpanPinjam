@@ -71,6 +71,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFidW5nYW5cUGVuYXJpa2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Transaksi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Transaksi/Pinjaman.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFBpbmphbWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Transaksi/Simpanan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFNpbXBhbmFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Transaksi/TambahSimpanan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFRhbWJhaFNpbXBhbmFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

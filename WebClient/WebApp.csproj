@@ -7,15 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\js\DataPengajuan.js" />
+    <Content Remove="wwwroot\js\Pengajuan.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="wwwroot\js\DataPengajuan.js" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\js\DataPengajuan.js" />
+    <None Include="wwwroot\js\Data-Pengajuan\Pengajuan.js" />
   </ItemGroup>
 
 </Project>
