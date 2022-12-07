@@ -70,6 +70,8 @@
             { className: "dt-body-center", targets: "_all" }
         ]
     })
+
+    $('#button1').
 });
 
 function addAnggota() {
@@ -131,4 +133,6 @@ function addAnggota() {
             }, 1500);
         }
     });
+
+    $()
 }
