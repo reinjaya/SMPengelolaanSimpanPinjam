@@ -158,7 +158,7 @@ namespace WebAPI.Repositories.Data
                 string nomorAnggotaBaru = data.NomorAnggota;
                 nomorAnggotaBaru = nomorAnggotaBaru.Substring(7);
                 int nomorAnggota = 1 + Int32.Parse(nomorAnggotaBaru);
-                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D3") + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
+                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D2") + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
                 user.Password = user.NomorAnggota; //DefaultPassword
                 _context.Users.Add(user);
                 var result = _context.SaveChanges();
