@@ -85,11 +85,11 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("RiwayatPenarikan")]
-        public ActionResult GetRiwayatPenarikan(int idTabungan)
+        public ActionResult GetRiwayatPenarikan(int idUser)
         {
             try
             {
-                var data = _repository.GetRiwayatPenarikan(idTabungan);
+                var data = _repository.GetRiwayatPenarikan(idUser);
                 if (data == null)
                 {
                     return Ok(new
@@ -153,7 +153,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpPut("Penarikan")]
-        public ActionResult DaftarPenarikanAnggota(int idUser, double jumlahPenarikan)
+        public ActionResult PenarikanUang(int idUser, double jumlahPenarikan)
         {
             try
             {
@@ -163,7 +163,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to update"
+                        Message = "Data failed to update",
+                        Response = 1
                     }); ;
                 }
                 else if (data == 3)
@@ -171,7 +172,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Saldo tidak cukup untuk melakukan penarikan"
+                        Message = "Saldo tidak cukup untuk melakukan penarikan",
+                        Response = 1
                     });
                 }
                 else
@@ -179,7 +181,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sukses melakukan penarikan"
+                        Message = "Sukses melakukan penarikan",
+                        Response = 2
                     });
                 }
             }

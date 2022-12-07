@@ -1,9 +1,24 @@
-﻿$(document).ready(function () {
-    let id = window.location.hash.substring(1)
-    console.log(id)
+﻿let url = new URL(window.location);
+let idUser = url.searchParams.get('user');
+let idTabungan = url.searchParams.get('tabungan');
+let namaAnggota = url.searchParams.get('nama');
+
+$(document).ready(function () {
+    $.ajax({
+        url: `https://localhost:7189/api/Tabungan/TabunganById?tabunganId=${idTabungan}`,
+        type: "GET",
+        //headers: {
+        //    'Authorization': "Bearer " + sessionStorage.getItem("token")
+        //}
+    }).done((res) => {
+        $("#txt1").val(res.data.besarTabungan);
+        $("#namaAnggotaPenarikan").html(namaAnggota);
+        $("#namaAnggotaRiwayatPenarikan").html(namaAnggota);
+    });
+
     $('#TablePenarikan').DataTable({
         ajax: {
-            url: `https://localhost:7189/api/Tabungan/RiwayatPenarikan?idTabungan=${id}`,
+            url: `https://localhost:7189/api/Tabungan/RiwayatPenarikan?idUser=${idUser}`,
             dataSrc: 'data',
             //headers: {
             //    'Authorization': "Bearer " + sessionStorage.getItem("token")
@@ -34,7 +49,7 @@
             {
                 data: null,
                 render: function (data, type, row, meta) {
-                    return new Date(data.tglPenarikan).toISOString().substring(0, 10)
+                    return new Date(data.tglPenarikan).toISOString().substring(0, 10);
                 }
             }
 
@@ -47,3 +62,58 @@
         ]
     })
 });
+
+function penarikanUang() {
+
+    let jumlahPenarikan = document.getElementById('txt2').value
+
+    data = {
+        "idUser": idUser,
+        "jumlahPenarikan": jumlahPenarikan
+    };
+
+    $.ajax({
+        url: `https://localhost:7189/api/Tabungan/Penarikan?idUser=${idUser}&jumlahPenarikan=${jumlahPenarikan}`,
+        type: 'PUT',
+        data: JSON.stringify(data),
+        dataType: 'json',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        success: function (data) {
+            if (data.response == 1) {
+                Swal.fire(data.message, '', 'error').then((result) => {
+                });
+            }
+            else  {
+                if (data.response == 2) {
+                    Swal.fire(data.message, '', 'success').then((result) => {
+                        // Reload the Page
+                        location.reload();
+                    });
+                }
+            }
+        }
+    });
+}
+
+function sum() {
+    let txtFirstNumberValue = document.getElementById('txt1').value;
+    let txtSecondNumberValue = document.getElementById('txt2').value;
+    let result = parseInt(txtFirstNumberValue) - parseInt(txtSecondNumberValue);
+
+    if (!isNaN(result)) {
+        document.getElementById('txt3').value = result;
+    }
+    else {
+        document.getElementById('txt3').value = txtFirstNumberValue;
+    }
+}
+
+function isNumberKey(evt) {
+    let charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+        return false;
+    return true;
+}

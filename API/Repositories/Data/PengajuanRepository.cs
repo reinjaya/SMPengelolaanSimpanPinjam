@@ -40,9 +40,28 @@ namespace WebAPI.Repositories.Data
            return _context.Pengajuan.Where(x => x.IdUser == id).ToList();
         }
 
-        public IEnumerable<Pengajuan> GetDaftarPengajuan()
+        public IEnumerable<PengajuanVM> GetDaftarPengajuan()
         {
-            return _context.Pengajuan.ToList();
+            var data = _context.Pengajuan.Include(x => x.User).Include(x => x.JenisPinjaman).ToList();
+            List<PengajuanVM> result = new List<PengajuanVM>();
+
+            foreach (var item in data)
+            {
+                result.Add(new PengajuanVM
+                {
+
+                    IdPengajuan = item.IdPengajuan,
+                    Nama = item.User.Nama,
+                    TglPengajuan = item.TglPengajuan,
+                    BesarPinjam = item.BesarPinjaman,
+                    JenisPinjam = item.JenisPinjaman.NamaPinjaman,
+                    Status = item.Status,
+                    TglTerima = item.TglAcc,
+                });
+            }
+
+            return result;
+
         }
 
         public int TambahPengajuanBaru(Pengajuan pengajuan)
@@ -51,6 +70,7 @@ namespace WebAPI.Repositories.Data
             {
                 pengajuan.Status = "Menunggu";
                 pengajuan.BesarAngsuran = BesarAngsuran(pengajuan.BesarPinjaman, pengajuan.IdJenisPinjaman);
+                pengajuan.TglAcc = DateTime.Now;
                 _context.Pengajuan.Add(pengajuan);
                 var result = _context.SaveChanges();
                 return result;

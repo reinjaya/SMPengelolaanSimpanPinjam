@@ -51,12 +51,12 @@ namespace WebAPI.Controllers
             }
         }
 
-        [HttpGet("GetAll")]
-        public ActionResult GetAll()
+        [HttpGet("GetDaftarPengajuan")]
+        public ActionResult GetDaftarPengajuan()
         {
             try
             {
-                var data = _repository.GetAll();
+                var data = _repository.GetDaftarPengajuan();
                 if (data == null)
                 {
                     return Ok(new
@@ -127,7 +127,7 @@ namespace WebAPI.Controllers
         }
 
 
-        [HttpPost("ProsesPengajuan")]
+        [HttpPut("ProsesPengajuan")]
         public ActionResult ProsesPengajuan(int idPengajuan, bool terimaPengajuan)
         {
             try
@@ -138,7 +138,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to save"
+                        Message = "Error, gagal memproses pengajuan",
+                        Response = 0
                     });
                 }
                 else
@@ -146,7 +147,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sukses memproses pengajuan"
+                        Message = "Sukses memproses pengajuan",
+                        Response = 1
                     });
                 }
             }

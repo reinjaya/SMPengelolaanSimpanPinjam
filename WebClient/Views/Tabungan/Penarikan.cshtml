@@ -15,40 +15,14 @@
 <div class="card shadow mb-4">
 	<!-- /.card-header -->
 	<div class="card-header py-3">
-		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Data Penarikan Uang<span id="#"> (nama anggota)</span></h6>
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Data Penarikan Uang <span id="namaAnggotaPenarikan"></span></h6>
 	</div>
-
 	<div class="card-body">
 			<div class="row">
-@*				<input type="hidden" value="<?php echo $lo; ?>" name="kode_tabungan">
-				<input type="hidden" value="<?php echo $luy; ?>" name="kode_anggota"> 
-				<?php $rtyu=mysql_fetch_array(mysql_query("SELECT *FROM t_tabungan where kode_tabungan='$lo' and kode_anggota='$luy'")); ?>*@
 				<div class="form-group col-md-4">
 					<label class="font-weight-bold">Total Saldo</label>
-					<input autocomplete="off" type="text" id="txt1" onkeyup="sum();" name="saldo" value="100000" required class="form-control" readonly="readonly"/>
+					<input autocomplete="off" type="text" id="txt1" onkeyup="sum();" name="saldo" value="" required class="form-control" readonly="readonly"/>
 				</div>
-
-				<script>
-					function sum() {
-					var txtFirstNumberValue = document.getElementById('txt1').value;
-					var txtSecondNumberValue = document.getElementById('txt2').value;
-					var result = parseInt(txtFirstNumberValue) - parseInt(txtSecondNumberValue);
-					if (!isNaN(result)) {
-					document.getElementById('txt3').value = result;
-					}
-					else{
-					document.getElementById('txt3').value = txtFirstNumberValue;
-					}
-					}
-					function isNumberKey(evt)
-					{
-					var charCode = (evt.which) ? evt.which : event.keyCode
-					if (charCode > 31 && (charCode < 48 || charCode > 57))
-
-					return false;
-					return true;
-					}
-				</script>
   
 				<div class="form-group col-md-4">
 					<label class="font-weight-bold">Besar Ambil Uang</label>
@@ -61,7 +35,7 @@
 				</div>
 			</div>
 		<div class="card-footer text-right">
-            <button class="btn btn-primary"><i class="fa fa-check"></i> Ambil Uang</button>
+            <button onclick="penarikanUang()" class="btn btn-primary"><i class="fa fa-check"></i> Tarik Uang</button>
             <button type="reset" class="btn btn-info"><i class="fa fa-sync-alt"></i> Reset</button>
         </div>
 	</div>
@@ -70,7 +44,7 @@
 <div class="card shadow mb-4">
 	<!-- /.card-header -->
 	<div class="card-header py-3">
-		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Data Riwayat Penarikan Uang <span id="#"> (nama anggota)</span></h6>
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Data Riwayat Penarikan Uang <span id="namaAnggotaRiwayatPenarikan"></span></h6>
 	</div>
 
 	<div class="card-body">
@@ -79,9 +53,9 @@
 				<thead class="bg-primary text-white">
 					<tr align="center">
 						<th width="5%">No</th>
-						<th>Kode Ambil</th>
+						<th>Kode Penarikan</th>
 						<th>Kode Tabungan</th>
-						<th>Besar Ambil</th>
+						<th>Besar Penarikan</th>
 						<th>Tanggal Ambil</th>
 					</tr>
 				</thead>

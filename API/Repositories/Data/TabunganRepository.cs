@@ -54,7 +54,7 @@ namespace WebAPI.Repositories.Data
                 {
                     IdTabungan = data.IdTabungan,
                     BesarPenarikan = (int)uang,
-                    TglPenarikan = DateTime.Now
+                    TglPenarikan = DateTime.Now.AddDays(1)
                 };
 
                 data.BesarTabungan -= uang;

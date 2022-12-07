@@ -43,7 +43,7 @@
                 data: null,
                 "render": function (data, type, row, meta) {
                     return `
-                    <a onclick="ambilUang(${data.idUser})" title="Ambil Uang" class="btn btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i></a>
+                    <a onclick="ambilUang(${data.idUser},${data.idTabungan},'${data.namaAnggota}')" title="Ambil Uang" class="btn btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i></a>
                     `;
                 }
             }
@@ -59,6 +59,11 @@
 });
 
 
-function ambilUang(id) {
-    location.href = '../Tabungan/Penarikan' + '#' + id;
+function ambilUang(id, idTabungan, namaAnggota) {
+    let url = window.location + '/Penarikan'
+    let urlParams = new URL(url);
+    urlParams.searchParams.append("user", id);
+    urlParams.searchParams.append("tabungan", idTabungan);
+    urlParams.searchParams.append("nama", namaAnggota);
+    location.href = urlParams.href;
 }

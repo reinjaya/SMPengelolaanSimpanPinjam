@@ -12,6 +12,8 @@ builder.Services.AddScoped<PengajuanRepository>();
 builder.Services.AddScoped<SimpananRepository>();
 builder.Services.AddScoped<PinjamanRepository>();
 builder.Services.AddScoped<AngsuranRepository>();
+builder.Services.AddScoped<JenisPinjamanRepository>();
+builder.Services.AddScoped<JenisSimpananRepository>();
 builder.Services.AddDbContext<MyContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection"));

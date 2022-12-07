@@ -77,9 +77,14 @@ namespace WebAPI.Repositories.Data
         {
             var data = _context.Users.Find(user.IdUser);
             user.Password = data.Password;
+
             if (data != null)
             {
+                _context.Entry(data).State = EntityState.Detached;
+                //_context.Update(user);
+                _context.Attach(user);
                 _context.Entry(user).State = EntityState.Modified;
+                //_context.Update(user);
                 var result = _context.SaveChanges();
                 return result;
             }
