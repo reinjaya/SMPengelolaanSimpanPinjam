@@ -8,5 +8,9 @@ namespace WebApp.Controllers
 		{
 			return View();
 		}
+		public IActionResult anggota()
+		{
+			return View();
+		}
 	}
 }
