@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\js\\Data-Pengaturan\\Pengaturan.js"
     },
     {
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengguna\\Anggota.js",
+      "PackagePath": "staticwebassets\\js\\Data-Pengguna\\Anggota.js"
+    },
+    {
       "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengguna\\Pengguna.js",
       "PackagePath": "staticwebassets\\js\\Data-Pengguna\\Pengguna.js"
     },

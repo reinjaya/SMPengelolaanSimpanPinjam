@@ -1,12 +1,10 @@
 ﻿@{
 	Layout = "_AdminLayout";
+	ViewData["Title"] = "Index";
 }
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-users"></i> Laporan Data Anggota</h1>
-
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal"> <i class="fa fa-print"></i> Print  </button>
-</div>
+	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-users"></i> Data Anggota</h1>
 
 <div class="card shadow mb-4">
 	<!-- /.card-header -->
@@ -16,17 +14,17 @@
 
 	<div class="card-body">
 		<div class="table-responsive">
-			<table class="table table-bordered" id="TableAnggota" width="100%" cellspacing="0">
+			<table class="table table-bordered text-center" id="TableAnggota" width="100%" cellspacing="0">
 				<thead class="bg-primary text-white">
 					<tr align="center">
 						<th width="5%">No</th>
 						<th>Kode Anggota</th>
 						<th>Nama Anggota</th>
-						<th>TTL</th>
+						<th>Tanggal Lahir</th>
 						<th>Pekerjaan</th>
 						<th>Tanggal Masuk</th>
 						<th>Status</th>
-						</tr>
+					</tr>
 				</thead>
 				<tbody>
 				</tbody>
@@ -34,8 +32,3 @@
 		</div>
 	</div>
 </div>
-
-<!--   Modals   -->
-<!--   Modal (Print Data)   -->
-
-

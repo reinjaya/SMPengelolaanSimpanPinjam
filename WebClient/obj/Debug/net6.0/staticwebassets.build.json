@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hlpROIWrVwS2FaiVOPZj3CvWkTlMOFzCgR1iDbM3nsw=",
+  "Hash": "uCAeI7dvNO6OLRkO4y4tKTT37LElVGSdZxCWQfTRRdg=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Data-Pengaturan\\Pengaturan.js"
+    },
+    {
+      "Identity": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengguna\\Anggota.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/Data-Pengguna/Anggota.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Data-Pengguna\\Anggota.js"
     },
     {
       "Identity": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengguna\\Pengguna.js",

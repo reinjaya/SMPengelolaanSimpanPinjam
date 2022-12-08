@@ -53,23 +53,12 @@
             { className: "dt-head-center", targets: "_all" }
             // Center align the body content of columns 2, 3, & 4
         ],
-
-        "dom": 'Blrtip',
-        buttons: ['colvis',
-
-            {
-                extend: 'pdf',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            },
-
-            {
-                extend: 'excelHtml5',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            }
+        dom: 'Bfrtip',
+        buttons: [
+            'colvis',
+            'excel',
+            'print',
+            'pdf'
         ]
     });
 });

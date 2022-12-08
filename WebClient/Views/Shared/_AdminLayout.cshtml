@@ -20,6 +20,10 @@
     <!-- Datatables-->
     <link href="~/lib/Sbadmin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/datatables.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" asp-append-version="true" />
+    <script src="jquery.validate.js"></script>
 </head>
 
 <body id="page-top">
@@ -150,7 +154,7 @@
                 </a>
                 <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Data Anggota</a>
+                        <a class="collapse-item" asp-controller="Laporan" asp-action="Index">Data Anggota</a>
                         <a class="collapse-item" href="#">Data Simpanan</a>
                         <a class="collapse-item" href="#">Data Pinjaman</a>
                         <a class="collapse-item" href="#">Data Perbulan</a>
@@ -303,6 +307,28 @@
     <script src="~/js/Data-Transaksi/TransaksiPinjaman.js"></script>
     <script src="~/js/Data-Transaksi/TransaksiSimpanan.js"></script>
     <script src="~/js/Data-Transaksi/TambahSimpanan.js"></script>
+    <script src="~/js/Data-Laporan/Laporan.js"></script>
+
+    <script src="~/lib/assets/js/core/popper.min.js"></script>
+
+    <script src="~/lib/assets/js/core/bootstrap.min.js"></script>
+    <script src="~/lib/assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/lib/assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="~/lib/assets/js/plugins/chartjs.min.js"></script>
+
+
+
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="~/lib/assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/datatables.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="~/js/site.js"></script>
 </body>
 
 </html>
