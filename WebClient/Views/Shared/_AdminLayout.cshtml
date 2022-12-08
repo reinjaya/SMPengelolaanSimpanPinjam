@@ -90,7 +90,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" asp-controller="Transaksi" asp-action="Index">
                     <i class="fas fa-fw fa-dolly-flatbed"></i>
                     <span>Data Transaksi</span>
                 </a>
@@ -150,8 +150,8 @@
                 </a>
                 <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" asp-controller="Laporan" asp-action="Index">Laporan Anggota</a>
-                        <a class="collapse-item" asp-controller="Laporan" asp-action="Index">Laporan Anggota</a>
+                        <a class="collapse-item" href="#">Data Anggota</a>
+                        <a class="collapse-item" href="#">Data Simpanan</a>
                         <a class="collapse-item" href="#">Data Pinjaman</a>
                         <a class="collapse-item" href="#">Data Perbulan</a>
                     </div>
@@ -295,14 +295,14 @@
     <script src="/lib/Sbadmin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
      <!--Page Script-->
-    <script src="~/js/DataPengaturan.js"></script>
-    <script src="~/js/Anggota.js"></script>
-    <script src="~/js/Tabungan.js"></script>
-    <script src="~/js/DataPenarikan.js"></script>
-    <script src="~/js/DataPengajuan.js"></script>
-    <script src="~/js/Laporan.js"></script>
-    <script src="~/js/Pengguna.js"></script>
-
+    <script src="~/js/Data-Anggota/Anggota.js"></script>
+    <script src="~/js/Data-Tabungan/Tabungan.js"></script>
+    <script src="~/js/Data-Tabungan/Penarikan.js"></script>
+    <script src="~/js/Data-Pengajuan/Pengajuan.js"></script>
+    <script src="~/js/Data-Transaksi/Transaksi.js"></script>
+    <script src="~/js/Data-Transaksi/TransaksiPinjaman.js"></script>
+    <script src="~/js/Data-Transaksi/TransaksiSimpanan.js"></script>
+    <script src="~/js/Data-Transaksi/TambahSimpanan.js"></script>
 </body>
 
 </html>

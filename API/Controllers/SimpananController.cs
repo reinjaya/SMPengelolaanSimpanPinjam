@@ -59,14 +59,16 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to update"
+                        Message = "Data failed to update",
+                        Response = 1
                     }); ;
                 }
                 else if (data == 3) {
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sudah melakukan simpanan wajib"
+                        Message = "Sudah melakukan simpanan wajib",
+                        Response = 1
                     });
                 }
                 else
@@ -74,7 +76,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sukses menambahkan simpanan wajib"
+                        Message = "Sukses menambahkan simpanan wajib",
+                        Response = 2
                     });
                 }
             }
@@ -99,7 +102,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to update"
+                        Message = "Data failed to update",
+                        Response = 1
                     }); ;
                 }
                 else
@@ -107,7 +111,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sukses menambahkan simpanan sukarela"
+                        Message = "Sukses menambahkan simpanan sukarela",
+                        Response = 2
                     });
                 }
             }

@@ -17,32 +17,48 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Anggota.js",
-      "PackagePath": "staticwebassets\\js\\Anggota.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Anggota\\Anggota.js",
+      "PackagePath": "staticwebassets\\js\\Data-Anggota\\Anggota.js"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\DataPenarikan.js",
-      "PackagePath": "staticwebassets\\js\\DataPenarikan.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Laporan\\Laporan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Laporan\\Laporan.js"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\DataPengaturan.js",
-      "PackagePath": "staticwebassets\\js\\DataPengaturan.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengajuan\\Pengajuan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Pengajuan\\Pengajuan.js"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Laporan.js",
-      "PackagePath": "staticwebassets\\js\\Laporan.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengaturan\\Pengaturan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Pengaturan\\Pengaturan.js"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Pengguna.js",
-      "PackagePath": "staticwebassets\\js\\Pengguna.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Pengguna\\Pengguna.js",
+      "PackagePath": "staticwebassets\\js\\Data-Pengguna\\Pengguna.js"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Tabungan.js",
-      "PackagePath": "staticwebassets\\js\\Tabungan.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Tabungan\\Penarikan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Tabungan\\Penarikan.js"
     },
     {
-      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Tabungan\\Tabungan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Tabungan\\Tabungan.js"
+    },
+    {
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Transaksi\\TambahSimpanan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Transaksi\\TambahSimpanan.js"
+    },
+    {
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Transaksi\\Transaksi.js",
+      "PackagePath": "staticwebassets\\js\\Data-Transaksi\\Transaksi.js"
+    },
+    {
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Transaksi\\TransaksiPinjaman.js",
+      "PackagePath": "staticwebassets\\js\\Data-Transaksi\\TransaksiPinjaman.js"
+    },
+    {
+      "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\js\\Data-Transaksi\\TransaksiSimpanan.js",
+      "PackagePath": "staticwebassets\\js\\Data-Transaksi\\TransaksiSimpanan.js"
     },
     {
       "Id": "C:\\Users\\Rifki Cakra Pratama\\source\\repos\\ProjectAppbaru\\SMPengelolaanSimpanPinjam\\WebClient\\wwwroot\\lib\\Sbadmin\\css\\sb-admin-2.css",
