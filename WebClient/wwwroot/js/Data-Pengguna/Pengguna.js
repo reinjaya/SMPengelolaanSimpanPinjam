@@ -198,37 +198,3 @@ function saveEditAnggota(idUser) {
         }
     });
 }
-
-function keluarAnggota(id) {
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, do it!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            $.ajax({
-                url: `https://localhost:7189/api/User/Keluarkan?id=${id}&keluarkan=${true}`,
-                type: "PUT",
-                contentType: "application/json",
-                success: function () {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Keluar!',
-                        text: 'Anggota berhasil dikeluarkan.',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                    setTimeout(function () {
-                        location.reload();
-                    }, 1500);
-                },
-                error: function () {
-                }
-            });
-        }
-    });
-}
