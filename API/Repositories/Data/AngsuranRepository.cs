@@ -104,7 +104,8 @@ namespace WebAPI.Repositories.Data
                 NamaAnggota = data.User.Nama,
                 TglPinjam = data.TglEntry,
                 LamaAngsur = data.LamaAngsuran,
-                AngsuranKe = data.LamaAngsuran - data.SisaAngsuran + 1
+                AngsuranKe = data.LamaAngsuran - data.SisaAngsuran + 1,
+                Denda = HitungDenda(data.TglTempo)
             };
 
             return angsuranUser;

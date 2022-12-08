@@ -25,7 +25,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to update"
+                        Message = "Data failed to update",
+                        Response = 1
                     }); ;
                 }
                 else if (data == 2)
@@ -33,7 +34,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Pinjaman sudah lunas"
+                        Message = "Pinjaman sudah lunas",
+                        Response = 2
                     });
                 }
                 else
@@ -41,7 +43,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sukses menambahkan angsuran"
+                        Message = "Sukses menambahkan angsuran",
+                        Response = 2
                     });
                 }
             }

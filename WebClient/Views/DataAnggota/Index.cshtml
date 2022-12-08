@@ -1,0 +1,152 @@
+﻿@{
+	Layout = "_AdminLayout";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-users"></i> Data Anggota</h1>
+
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal"> <i class="fa fa-plus"></i> Tambah Data </button>
+</div>
+
+<div class="card shadow mb-4">
+	<!-- /.card-header -->
+	<div class="card-header py-3">
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Daftar Data Anggota</h6>
+	</div>
+
+	<div class="card-body">
+		<div class="table-responsive">
+			<table class="table table-bordered text-center" id="TableAnggota" width="100%" cellspacing="0">
+				<thead class="bg-primary text-white">
+					<tr align="center">
+						<th width="5%">No</th>
+						<th>Kode Anggota</th>
+						<th>Nama Anggota</th>
+						<th>Tanggal Lahir</th>
+						<th>Pekerjaan</th>
+						<th>Tanggal Masuk</th>
+						<th>Status</th>
+						<th>Aksi</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!--   Modals   -->
+<!--   Modal (Tambah Data)   -->
+<div class="modal fade" id="addModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="m-0 text-primary" id="exampleModalLabel"><i class="fas fa-fw fa-plus"></i> Tambah Data Anggota</h5>
+			</div>
+			<div class="modal-body">
+
+				<div class="row">
+@*				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Nomor Anggota</label>
+					<input autocomplete="off" type="text" name="nomor_anggota" required class="form-control" readonly="readonly"/>
+					<input autocomplete="off" type="hidden" name="id_user" class="form-control" />
+					<input autocomplete="off" type="hidden" name="password" class="form-control"/>
+					<input autocomplete="off" type="hidden" name="status" required class="form-control" readonly="readonly" />
+				</div>*@
+				
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Nama Lengkap</label>
+					<input autocomplete="off" type="text" id="nama_anggota" required class="form-control"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Email</label>
+					<input autocomplete="off" type="email" id="email_anggota" required class="form-control" />
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Username</label>
+					<input autocomplete="off" type="text" id="username_anggota" required class="form-control" />
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Alamat</label>
+					<input autocomplete="off" type="text" id="alamat_anggota" required class="form-control"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Jenis Kelamin</label>
+					<select id="jenis_kelamin" class="form-control" required>
+						<option value="">--Pilih Jenis Kelamin--</option>
+						<option value="Laki-laki">Laki-laki</option>
+						<option value="Perempuan">Perempuan</option>
+					</select>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Pekerjaan</label>
+					<input autocomplete="off" type="text" id="pekerjaan_anggota" required class="form-control"/>
+				</div>
+				
+@*				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Role Id</label>
+					<input autocomplete="off" type="text" name="role_anggota" required class="form-control"/>
+				</div>*@
+				
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Telpon</label>
+					<input autocomplete="off" type="text" id="telpon_anggota" required class="form-control" />
+				</div>
+				
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Tempat Lahir</label>
+					<input autocomplete="off" type="text" id="tmp_lahir" required class="form-control"/>
+				</div>
+				
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Tanggal Lahir</label>
+					<input autocomplete="off" type="date" id="tgl_lahir" required class="form-control"/>
+				</div>
+				
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">User Entri</label>
+					<input autocomplete="off" type="text" id="u_entry" required class="form-control" value="Admin" readonly="readonly"/>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Tanggal Masuk</label>
+						<input autocomplete="off" id="tgl_masuk" value="@DateTime.Now.ToString("MM/dd/yyyy")" type="datetime" readonly required class="form-control" />
+				</div>
+				
+				<div class="form-group col-md-6">
+					<label class="font-weight-bold">Tanggal Entri</label>
+						<input autocomplete="off" id="tgl_entry" value="@DateTime.Now.ToString("MM/dd/yyyy")" type="datetime" readonly req uired class="form-control" />
+				</div>
+			
+			</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" onclick="addAnggota()"><i class="fa fa-save"></i> Simpan</button>
+				<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--   Modal (Edit Data)   -->
+<div class="modal fade" id="editModalAnggota" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="m-0 text-primary" id="exampleModalLabel"><i class="fas fa-fw fa-edit"></i> Edit Data Anggota</h5>
+			</div>
+			<div class="modal-body">
+				<div id="editDataAnggota">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

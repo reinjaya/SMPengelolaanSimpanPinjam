@@ -96,7 +96,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Data failed to save"
+                        Message = "Data failed to save",
+                        Response = 1
                     });
                 }
                 else if (data == 2)
@@ -104,7 +105,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Anda belum layak melakukan pengajuan"
+                        Message = "Belum layak melakukan pengajuan",
+                        Reponse = 1
                     });
                 }
                 else
@@ -112,7 +114,8 @@ namespace WebAPI.Controllers
                     return Ok(new
                     {
                         StatusCode = 200,
-                        Message = "Sukses melakukan pengajuan"
+                        Message = "Sukses melakukan pengajuan",
+                        Response = 2
                     });
                 }
             }

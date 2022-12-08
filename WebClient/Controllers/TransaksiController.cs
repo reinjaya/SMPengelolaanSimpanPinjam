@@ -28,5 +28,20 @@ namespace WebApp.Controllers
         {
             return View();
         }
+
+        public IActionResult TambahPinjaman()
+        {
+            return View();
+        }
+
+        public IActionResult BayarAngsuran()
+        {
+            return View();
+        }
+
+        public IActionResult DetailPinjaman()
+        {
+            return View();
+        }
     }
 }

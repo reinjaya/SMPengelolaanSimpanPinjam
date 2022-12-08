@@ -77,7 +77,7 @@ namespace WebAPI.Controllers
                     {
                         StatusCode = 200,
                         Message = "Sukses menambahkan simpanan wajib",
-                        Response = 2
+                        Response = 1
                     });
                 }
             }

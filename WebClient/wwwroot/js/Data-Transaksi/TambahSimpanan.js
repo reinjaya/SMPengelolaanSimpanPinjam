@@ -29,7 +29,9 @@
                     text: item.namaSimpanan
                 }));
             }
-    });
+        });
+
+        $("input[name='besar_simpanan']").val($("#id_jenis_simpan").val());
     });
 
     $('#id_jenis_simpan').on('change', function () {
@@ -53,9 +55,6 @@ function tambahSimpananAnggota() {
     let idUser1 = url.searchParams.get('user');
 
     let jumlahUang = $("input[name='besar_simpanan']").val();
-    console.log("MASUK FUNGSI SIMPAN")
-    console.log(jumlahUang)
-    console.log(idUser1)
 
     let data1 = {
         "idUser": idUser1,
@@ -66,14 +65,13 @@ function tambahSimpananAnggota() {
     if ($("#id_jenis_simpan option:selected").text() == 'Sukarela') {
 
         $.ajax({
-            url: `https://localhost:7189/api/Simpanan/TambahSimpananSukarela?idUser=${idUser1}&jumlahUang=${jumlahUang}&userEntry=Admin'`,
+            url: `https://localhost:7189/api/Simpanan/TambahSimpananSukarela?idUser=${idUser1}&jumlahUang=${jumlahUang}&userEntry=Admin`,
             type: 'POST',
             data: JSON.stringify(data1),
             headers: {
                
             },
             success: function (data) {
-                console.log("MASUK FUNGSI SUKARELA")
                 if (data.response == 1) {
                     Swal.fire(data.message, '', 'error').then((result) => {
                     });

@@ -10,5 +10,6 @@
         public DateTime TglPinjam { get; set; }
         public int LamaAngsur { get; set; }
         public int AngsuranKe { get; set; }
+        public double Denda { get; set; }
     }
 }

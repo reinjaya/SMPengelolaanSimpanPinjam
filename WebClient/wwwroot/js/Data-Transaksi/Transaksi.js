@@ -45,7 +45,7 @@
                     return `
                     <div class="btn-group align-items-center" role="group">
 					 <a onclick="transaksiSimpanan(${data.idUser},'${data.nama}')" title="Transaksi Simpanan" class="btn btn-success btn-sm"><i class="fa fa-money-bill-wave"></i></a>
-                     <a title="Transaksi Pinjaman" class="btn btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i></a>
+                     <a onclick="transaksiPinjaman(${data.idUser},'${data.nama}')" title="Transaksi Pinjaman" class="btn btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i></a>
 					</div>`;
                 }
             }
@@ -62,6 +62,14 @@
 
 function transaksiSimpanan(idUser, namaAnggota, nomorAnggota) {
     let url = window.location + '/Simpanan'
+    let urlParams = new URL(url);
+    urlParams.searchParams.append("user", idUser);
+    urlParams.searchParams.append("nama", namaAnggota);
+    location.href = urlParams.href;
+}
+
+function transaksiPinjaman(idUser, namaAnggota, nomorAnggota) {
+    let url = window.location + '/Pinjaman'
     let urlParams = new URL(url);
     urlParams.searchParams.append("user", idUser);
     urlParams.searchParams.append("nama", namaAnggota);
