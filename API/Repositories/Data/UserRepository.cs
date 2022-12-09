@@ -3,6 +3,7 @@ using Microsoft.SqlServer.Server;
 using WebAPI.Context;
 using WebAPI.Handlers;
 using WebAPI.Models;
+using WebAPI.ViewModel;
 
 namespace WebAPI.Repositories.Data
 {
@@ -91,14 +92,61 @@ namespace WebAPI.Repositories.Data
             return 0;
         }
 
-        public IEnumerable<User> GetAnggota()
+        public IEnumerable<UserVM> GetAnggota()
         {
-            return _context.Users.Where(user => user.IdRole == 3).ToList();
+            var data = _context.Users.Where(user => user.IdRole == 3).ToList();
+            List<UserVM> result = new List<UserVM>();
+            foreach (var item in data)
+            {
+                result.Add(new UserVM
+                {
+                    IdUser = item.IdUser,
+                    NomorAnggota = item.NomorAnggota,
+                    Nama = item.Nama,
+                    Email = item.Email,
+                    UserName = item.UserName,
+                    Alamat = item.Alamat,
+                    JenisKelamin = item.JenisKelamin,
+                    Pekerjaan = item.Pekerjaan,
+                    IdRole = item.IdRole,
+                    Telepon = item.Telepon,
+                    TempatLahir = item.TempatLahir,
+                    TglLahir = item.TglLahir,
+                    Status= item.Status,
+                    UserEntry = item.UserEntry,
+                    TglMasuk = item.TglEntry,
+                });
+            }
+            return result;
+
         }
 
-        public IEnumerable<User> GetAdminandPetugas()
+        public IEnumerable<UserVM> GetAdminandPetugas()
         {
-            return _context.Users.Where(user => user.IdRole == 2 || user.IdRole == 3).ToList();
+            var data = _context.Users.Where(user => user.IdRole == 2 || user.IdRole == 1).ToList();
+            List<UserVM> result = new List<UserVM>();
+            foreach (var item in data)
+            {
+                result.Add(new UserVM
+                {
+                    IdUser = item.IdUser,
+                    NomorAnggota = item.NomorAnggota,
+                    Nama = item.Nama,
+                    Email = item.Email,
+                    UserName = item.UserName,
+                    Alamat = item.Alamat,
+                    JenisKelamin = item.JenisKelamin,
+                    Pekerjaan = item.Pekerjaan,
+                    IdRole = item.IdRole,
+                    Telepon = item.Telepon,
+                    TempatLahir = item.TempatLahir,
+                    TglLahir = item.TglLahir,
+                    Status = item.Status,
+                    UserEntry = item.UserEntry,
+                    TglMasuk = item.TglEntry,
+                });
+            }
+            return result;
         }
 
         public int ChangeRole(int userId, int idRole)
@@ -109,7 +157,7 @@ namespace WebAPI.Repositories.Data
             if (idRole == 1)
             {
                 data.IdRole = 1;
-                nomorBaru = 'U' + nomorBaru.Substring(7);
+                nomorBaru = 'U' + nomorBaru.Remove(0, 1);
                 data.NomorAnggota = nomorBaru;
                 _context.Entry(data).State = EntityState.Modified;
                 var result = _context.SaveChanges();
@@ -118,7 +166,7 @@ namespace WebAPI.Repositories.Data
             else if (idRole == 2)
             {
                 data.IdRole = 2;
-                nomorBaru = 'P' + nomorBaru.Substring(7);
+                nomorBaru = 'P' + nomorBaru.Remove(0, 1);
                 data.NomorAnggota = nomorBaru;
                 _context.Entry(data).State = EntityState.Modified;
                 var result = _context.SaveChanges();
@@ -127,7 +175,7 @@ namespace WebAPI.Repositories.Data
             else
             {
                 data.IdRole = 1;
-                nomorBaru = 'A' + nomorBaru.Substring(7);
+                nomorBaru = 'A' + nomorBaru.Remove(0, 1);
                 data.NomorAnggota = nomorBaru;
                 _context.Entry(data).State = EntityState.Modified;
                 var result = _context.SaveChanges();
@@ -135,9 +183,33 @@ namespace WebAPI.Repositories.Data
             }
         }
 
-        public IEnumerable<User> GetAnggotaAktif()
+        public IEnumerable<UserVM> GetAnggotaAktif()
         {
-            return _context.Users.Where(user => user.IdRole == 3 && user.Status == "Aktif").ToList();
+            var data = _context.Users.Where(user => user.IdRole == 3 && user.Status == "Aktif").ToList();
+
+            List<UserVM> result = new List<UserVM>();
+            foreach (var item in data)
+            {
+                result.Add(new UserVM
+                {
+                    IdUser = item.IdUser,
+                    NomorAnggota = item.NomorAnggota,
+                    Nama = item.Nama,
+                    Email = item.Email,
+                    UserName = item.UserName,
+                    Alamat = item.Alamat,
+                    JenisKelamin = item.JenisKelamin,
+                    Pekerjaan = item.Pekerjaan,
+                    IdRole = item.IdRole,
+                    Telepon = item.Telepon,
+                    TempatLahir = item.TempatLahir,
+                    TglLahir = item.TglLahir,
+                    Status = item.Status,
+                    UserEntry = item.UserEntry,
+                    TglMasuk = item.TglEntry,
+                });
+            }
+            return result;
         }
 
         public int TambahAnggota(User user)
@@ -148,7 +220,7 @@ namespace WebAPI.Repositories.Data
             if(data == null)
             {
                 user.NomorAnggota = 'A' + user.TglLahir.Month.ToString() + user.TglLahir.Year.ToString() + "001";
-                user.Password = user.NomorAnggota; //DefaultPassword
+                user.Password = Hashing.HashPassword(user.NomorAnggota); //DefaultPassword
                 _context.Users.Add(user);
                 var result = _context.SaveChanges();
                 return result;
@@ -159,13 +231,11 @@ namespace WebAPI.Repositories.Data
                 nomorAnggotaBaru = nomorAnggotaBaru.Substring(7);
                 int nomorAnggota = 1 + Int32.Parse(nomorAnggotaBaru);
                 user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D2") + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
-                user.Password = user.NomorAnggota; //DefaultPassword
+                user.Password = Hashing.HashPassword(user.NomorAnggota); //DefaultPassword
                 _context.Users.Add(user);
                 var result = _context.SaveChanges();
                 return result;
             }
- 
         }
-
     }
 }

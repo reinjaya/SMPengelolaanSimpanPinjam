@@ -114,11 +114,11 @@ function wajibPinjaman() {
     location.href = urlParams.href;
 }
 
-function backPinjaman() {
+function backPinjamanAnggotaPage() {
     let loc = window.location.href;
     var lastIndex = loc.lastIndexOf("/");
     var path = loc.substring(0, lastIndex);
-    var new_path = path + "/Pinjaman";
+    var new_path = path + "/TambahPengajuan";
     let urlParams = new URL(new_path);
     urlParams.searchParams.append("user", idUser);
     urlParams.searchParams.append("nama", namaAnggota);

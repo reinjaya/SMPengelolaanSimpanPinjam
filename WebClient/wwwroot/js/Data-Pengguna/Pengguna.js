@@ -1,29 +1,65 @@
-﻿var dataSetPengguna = [
-    ['1', 'U0001', 'Admin', 'Admin', 'Admin', 'admin'],
-    ['2', 'U0002', 'Operator 1', 'Operator 1', 'Operator 1', 'operator1'],
-    ['3', 'U0003', 'Operator 2', 'Operator 2', 'Operator 2', 'operator2'],
-];
-
-$(document).ready(function () {
-
+﻿$(document).ready(function () {
     $('#TablePengguna').DataTable({
-        data: dataSetPengguna,
+        ajax: {
+            url: 'https://localhost:7189/api/User/GetAdminandPetugas',
+            dataSrc: 'data',
+            //headers: {
+            //    'Authorization': "Bearer " + sessionStorage.getItem("token")
+            //},
+        },
         columns: [
-            { dataSetPengguna: null, },
-            { dataSetPengguna: null, },
-            { dataSetPengguna: null, },
-            { dataSetPengguna: null, },
-            { dataSetPengguna: null, },
-            { dataSetPengguna: null, },
             {
-                dataSetPengguna: null,
+                data: null,
+                render: function (data, type, row, meta) {
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.nomorAnggota;
+                }
+            },
+            //{
+            //    data: null,
+            //    render: function (data, type, row, meta) {
+            //        return data.idRole;
+            //    }
+            //},
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.userName;
+                }
+            },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.nama;
+                }
+            },
+            {
+                data: null,
                 "render": function (data, type, row, meta) {
-                    return `
-                    <div class="btn-group align-items-center" role="group">
-					<a href="#editModalPengguna" title="Edit Data" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModalPengguna"><i class="fa fa-edit"></i></a>
-					<a title="Hapus Data" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-					</div>
+                    if (row.idRole == 1) {
+                        return `
+                    <span class='badge badge-dark'>Admin</span>
                     `;
+                    } else if (row.idRole == 2) {
+                        return `
+                    <span class='badge badge-dark'>Petugas</span>
+                    `;
+                    }
+                }
+            },
+            {
+                data: 'status',
+                "render": function (data, type, row, meta) {
+                    if (row.status == 'Aktif') {
+                        return `
+                    <span class='badge badge-success'>Aktif</span>
+                    `;
+                    }
                 }
             }
 
@@ -34,5 +70,11 @@ $(document).ready(function () {
             // Center align the body content of columns 2, 3, & 4
             { className: "dt-body-center", targets: "_all" }
         ]
-    })
+    });
 });
+
+function addUser() {
+    let url = window.location + '/DataUser'
+    let urlParams = new URL(url);
+    location.href = urlParams.href;
+}

@@ -5,7 +5,7 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
 	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-users"></i> Data Pengguna</h1>
 
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal"> <i class="fa fa-plus"></i> Tambah Data </button>
+	<button id="pengguna" type="button" class="btn btn-primary" onclick="addUser()"> <i class="fa fa-plus"></i> Tambah Data </button>
 </div>
 
 <div class="card shadow mb-4">
@@ -16,136 +16,20 @@
 
 	<div class="card-body">
 		<div class="table-responsive">
-			<table class="table table-bordered" id="TablePengguna" width="100%" cellspacing="0">
+			<table class="table table-bordered text-center" id="TablePengguna" width="100%" cellspacing="0">
 				<thead class="bg-primary text-white">
 					<tr align="center">
 						<th width="5%">No</th>
 						<th>Kode User</th>
-						<th>Nama User</th>
-						<th>Password</th>
+						<th>Username</th>
 						<th>Nama</th>
 						<th>Level</th>
-						<th>Aksi</th>
+						<th>Status</th>
 					</tr>
 				</thead>
 				<tbody>
-
 				</tbody>
 			</table>
-		</div>
-	</div>
-</div>
-
-<!--   Modals   -->
-<!--   Modal (Tambah Data)   -->
-<div class="modal fade" id="addModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="m-0 text-primary" id="exampleModalLabel"><i class="fas fa-fw fa-plus"></i> Tambah Data Pengguna</h5>
-			</div>
-			<div class="modal-body">
-
-				<div class="row">
-				
-				<div class="form-group col-md-6">
-					<label class="font-weight-bold">Kode Pengguna</label>
-					<input autocomplete="off" type="text" name="kode_pengguna" required class="form-control"/>
-				</div>
-
-				<div class="form-group col-md-6">
-					<label class="font-weight-bold">Username</label>
-					<input autocomplete="off" type="text" name="username_pengguna" required class="form-control" />
-				</div>
-
-				<div class="form-group col-md-6">
-					<label class="font-weight-bold">Password</label>
-					<input autocomplete="off" type="text" name="password_pengguna" required class="form-control"/>
-				</div>
-
-				<div class="form-group col-md-6">
-					<label class="font-weight-bold">Nama</label>
-					<input autocomplete="off" type="text" name="nama_pengguna" required class="form-control"/>
-				</div>
-
-				<div class="form-group col-md-6">
-					<label class="font-weight-bold">Level</label>
-					<select name="level_pengguna" class="form-control" required>
-						<option value="">--Pilih Level--</option>
-						<option value="Admin">Admin</option>
-						<option value="Operator">Operator</option>
-					</select>
-				</div>
-				
-				<div class="form-group col-md-6">
-					<label class="font-weight-bold">Tanggal Entri</label>
-					<input autocomplete="off" value="@DateTime.Now" type="datetime" readonly req uired class="form-control" />
-				</div>
-			
-			</div>
-
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
-				<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--   Modal (Edit Data)  -->
-
-<div class="modal fade" id="editModalPengguna" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="m-0 text-primary" id="exampleModalLabel"><i class="fas fa-fw fa-edit"></i> Edit Data Pengguna</h5>
-			</div>
-			<div class="modal-body">
-
-				<div class="row">
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">Kode Pinjaman</label>
-						<input autocomplete="off" type="text" name="kode_jenis_pinjam" readonly required class="form-control" />
-					</div>
-
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">Jenis Pinjaman</label>
-						<input autocomplete="off" type="text" name="nama_pinjaman" required class="form-control" />
-					</div>
-
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">Lama Angsur (Bulan)</label>
-						<input autocomplete="off" type="number" name="lama_angsuran" required class="form-control" />
-					</div>
-
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">Maksimal Pinjam</label>
-						<input autocomplete="off" type="number" name="maks_pinjam" required class="form-control" />
-					</div>
-
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">Bunga (%)</label>
-						<input autocomplete="off" type="number" name="bunga" required class="form-control" />
-					</div>
-
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">User Entri</label>
-						<input autocomplete="off" type="text" name="u_entry" readonly required class="form-control" />
-					</div>
-
-					<div class="form-group col-md-6">
-						<label class="font-weight-bold">Tanggal Entri</label>
-						<input autocomplete="off" type="text" readonly required class="form-control" />
-					</div>
-				</div>
-
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
-				<button type="reset" class="btn btn-info"><i class="fa fa-sync-alt"></i> Reset</button>
-				<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
-			</div>
 		</div>
 	</div>
 </div>

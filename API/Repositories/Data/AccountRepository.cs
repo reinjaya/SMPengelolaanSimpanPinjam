@@ -16,18 +16,17 @@ namespace WebAPI.Repositories.Data
 
         public UserRole GetLoginData(string userName, string password)
         {
-            var data = _context.Users.FirstOrDefault(x => x.UserName.Equals(userName));
-            string roleName = _context.Roles.Find(data.IdRole).RoleName;
+            var data = _context.Users.Include(x => x.Role).FirstOrDefault(x => x.UserName.Equals(userName));
 
-            //bool pass = Hashing.ValidatePassword(password, data.Password);
+            bool pass = Hashing.ValidatePassword(password, data.Password);
 
-            if (true) //testing
+            if (pass)
             {
                 UserRole result = new UserRole()
                 {
                     Id = data.IdUser,
                     Name = data.Nama,
-                    RoleName = roleName
+                    RoleName = data.Role.RoleName
                 };
 
                 return result;

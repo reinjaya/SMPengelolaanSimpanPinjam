@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Reinhard\Documents\Belajar Pemrograman C#\SMPengelolaanSimpanPinjam\WebClient
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Anggota/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5nZ290YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Anggota/Pengajuan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5nZ290YVxQZW5nYWp1YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Anggota/TambahPengajuan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5nZ290YVxUYW1iYWhQZW5nYWp1YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/DataAnggota/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YUFuZ2dvdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -23,8 +35,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/JenisPinjaman/Index.cshtml]
@@ -35,8 +51,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmVuaXNTaW1wYW5hblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Laporan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFwb3JhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Pengajuan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2FqdWFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Pengguna/DataUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2d1bmFcRGF0YVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Reinhard/Documents/Belajar Pemrograman C\#/SMPengelolaanSimpanPinjam/WebClient/Views/Pengguna/Index.cshtml]

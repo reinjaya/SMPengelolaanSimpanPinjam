@@ -36,7 +36,7 @@
             {
                 data: null,
                 render: function (data, type, row, meta) {
-                    return new Date(data.tglEntry).toISOString().substring(0, 10);
+                    return new Date(data.tglMasuk).toISOString().substring(0, 10);
                 }
             },
             {

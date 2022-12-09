@@ -1,0 +1,38 @@
+﻿@{
+	Layout = "_AdminLayout";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-users"></i> Data Pengguna</h1>
+
+	<a asp-controller="Pengguna" asp-action="Index" class="btn btn-secondary btn-icon-split">
+		<span class="icon text-white-50"><i class="fas fa-arrow-left"></i></span>
+		<span class="text"> Kembali</span>
+	</a>
+</div>
+
+<div class="card shadow mb-4">
+	<!-- /.card-header -->
+	<div class="card-header py-3">
+		<h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-table"></i> Tambah Data Pengguna</h6>
+	</div>
+
+	<div class="card-body">
+		<div class="table-responsive">
+			<table class="table table-bordered text-center" id="TableDataUser" width="100%" cellspacing="0">
+				<thead class="bg-primary text-white">
+					<tr align="center">
+						<th width="5%">No</th>
+						<th>Nomor Anggota</th>
+						<th>Username</th>
+						<th>Nama</th>>
+						<th>Status</th>
+						<th>Aksi</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

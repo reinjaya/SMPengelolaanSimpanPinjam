@@ -18,15 +18,28 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpGet("Login/")]
+        public IActionResult Login()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpGet("Unauthorized/")]
+        public IActionResult Unauthorized()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
+        }
+
+        [HttpGet("Forbidden/")]
+        public IActionResult Forbidden()
+        {
+            return View();
+        }
+
+        [HttpGet("NotFound/")]
+        public IActionResult NotFound()
+        {
+            return View();
         }
     }
 }

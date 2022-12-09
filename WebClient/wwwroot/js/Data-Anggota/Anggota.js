@@ -159,7 +159,6 @@ function editAnggota(idUser) {
             <input type="hidden" class="form-control" id="tgl_masuk1" value="${res.data.tglMasuk}" readonly>
             <input type="hidden" class="form-control" id="username_anggota1" value="${res.data.userName}" readonly>
             <input type="hidden" class="form-control" id="status1" value="${res.data.status}" readonly>
-            <input type="hidden" class="form-control" id="password1" value="${res.data.password}" readonly>
 
 				<div class="form-group col-md-6">
 					<label class="font-weight-bold">Nomor Anggota</label>
@@ -242,7 +241,7 @@ function saveEditAnggota(idUser) {
     var nama = $('#nama_anggota1').val();
     var email = $('#email_anggota1').val();
     var username = $('#username_anggota1').val();
-    var password = $('#password1').val();
+    var password = "a";
     var alamat = $('#alamat_anggota1').val();
     var jk = $('#jenis_kelamin1').val();
     var pekerjaan = $('#pekerjaan_anggota1').val();
